@@ -1,7 +1,8 @@
+import 'package:adobe_xd/page_link.dart';
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import './MenuSettings.dart';
-import 'package:adobe_xd/page_link.dart';
+// import 'package:adobe_xd/page_link.dart';
 import './HomeBalance2.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -630,678 +631,658 @@ class HomeBalance1 extends StatelessWidget {
           Pinned.fromPins(
             Pin(start: 16.0, end: 16.0),
             Pin(start: 28.0, end: 38.0),
-            child: PageLink(
-              links: [
-                PageLinkInfo(
-                  transition: LinkTransition.Fade,
-                  ease: Curves.easeOut,
-                  duration: 0.3,
-                  pageBuilder: () => HomeBalance2(),
-                ),
-              ],
-              child: Stack(
-                children: <Widget>[
-                  Pinned.fromPins(
-                    Pin(size: 252.5, start: 0.0),
-                    Pin(size: 22.0, start: 0.0),
-                    child:
-                        // Adobe XD layer: 'Nav 1' (group)
-                        Stack(
-                      children: <Widget>[
-                        Pinned.fromPins(
-                          Pin(startFraction: 0.3584, endFraction: 0.0),
-                          Pin(size: 20.0, middle: 0.5001),
-                          child:
-                              // Adobe XD layer: 'Current balance' (text)
-                              Text(
-                            'WALLET BALANCE',
-                            style: TextStyle(
-                              fontFamily: 'Montserrat',
-                              fontSize: 17,
-                              color: const Color(0xff0e131e),
-                              fontWeight: FontWeight.w500,
-                            ),
-                            textAlign: TextAlign.center,
+            child: Stack(
+              children: <Widget>[
+                Pinned.fromPins(
+                  Pin(size: 252.5, start: 0.0),
+                  Pin(size: 22.0, start: 0.0),
+                  child:
+                      // Adobe XD layer: 'Nav 1' (group)
+                      Stack(
+                    children: <Widget>[
+                      Pinned.fromPins(
+                        Pin(startFraction: 0.3584, endFraction: 0.0),
+                        Pin(size: 20.0, middle: 0.5001),
+                        child:
+                            // Adobe XD layer: 'Current balance' (text)
+                            Text(
+                          'WALLET BALANCE',
+                          style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 17,
+                            color: const Color(0xff0e131e),
+                            fontWeight: FontWeight.w500,
                           ),
+                          textAlign: TextAlign.center,
                         ),
-                        Pinned.fromPins(
-                          Pin(size: 9.6, start: 0.0),
-                          Pin(size: 9.6, start: 0.0),
-                          child:
-                              // Adobe XD layer: 'Fill 1' (shape)
-                              SvgPicture.string(
-                            _svg_u6y1cf,
-                            allowDrawingOutsideViewBox: true,
-                            fit: BoxFit.fill,
-                          ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(size: 9.6, start: 0.0),
+                        Pin(size: 9.6, start: 0.0),
+                        child:
+                            // Adobe XD layer: 'Fill 1' (shape)
+                            SvgPicture.string(
+                          _svg_u6y1cf,
+                          allowDrawingOutsideViewBox: true,
+                          fit: BoxFit.fill,
                         ),
-                        Pinned.fromPins(
-                          Pin(size: 22.0, start: 0.0),
-                          Pin(start: 0.0, end: 0.0),
-                          child:
-                              // Adobe XD layer: 'Fill 3' (shape)
-                              PageLink(
-                            links: [
-                              PageLinkInfo(
-                                transition: LinkTransition.Fade,
-                                ease: Curves.easeOut,
-                                duration: 0.3,
-                                pageBuilder: () => MenuSettings(),
-                              ),
-                            ],
-                            child: SvgPicture.string(
+                      ),
+                      Pinned.fromPins(
+                        Pin(size: 22.0, start: 0.0),
+                        Pin(start: 0.0, end: 0.0),
+                        child:
+                            // Adobe XD layer: 'Fill 3' (shape)
+                            SvgPicture.string(
                               _svg_nuc373,
                               allowDrawingOutsideViewBox: true,
                               fit: BoxFit.fill,
                             ),
-                          ),
-                        ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
-                  Pinned.fromPins(
-                    Pin(start: 0.0, end: 0.0),
-                    Pin(size: 200.0, start: 49.0),
-                    child:
-                        // Adobe XD layer: 'Card 1' (group)
-                        Stack(
-                      children: <Widget>[
-                        Pinned.fromPins(
-                          Pin(start: 0.0, end: 0.0),
-                          Pin(start: 0.0, end: 0.0),
-                          child:
-                              // Adobe XD layer: 'Rectangle' (shape)
-                              Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(40.0),
-                                topRight: Radius.circular(40.0),
-                              ),
-                              gradient: LinearGradient(
-                                begin: Alignment(0.0, -1.0),
-                                end: Alignment(0.0, 1.0),
-                                colors: [
-                                  const Color(0xff3b5998),
-                                  const Color(0xff5e6168)
-                                ],
-                                stops: [0.0, 1.0],
-                              ),
+                ),
+                Pinned.fromPins(
+                  Pin(start: 0.0, end: 0.0),
+                  Pin(size: 200.0, start: 49.0),
+                  child:
+                      // Adobe XD layer: 'Card 1' (group)
+                      Stack(
+                    children: <Widget>[
+                      Pinned.fromPins(
+                        Pin(start: 0.0, end: 0.0),
+                        Pin(start: 0.0, end: 0.0),
+                        child:
+                            // Adobe XD layer: 'Rectangle' (shape)
+                            Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(40.0),
+                              topRight: Radius.circular(40.0),
                             ),
-                          ),
-                        ),
-                        Pinned.fromPins(
-                          Pin(startFraction: 0.3484, endFraction: 0.3484),
-                          Pin(size: 32.0, middle: 0.1667),
-                          child:
-                              // Adobe XD layer: '$ 10,834' (text)
-                              Text(
-                            '\$ 10,834',
-                            style: TextStyle(
-                              fontFamily: 'Montserrat-Regular',
-                              fontSize: 26,
-                              color: const Color(0xffffffff),
-                            ),
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                        Pinned.fromPins(
-                          Pin(startFraction: 0.2566, endFraction: 0.2536),
-                          Pin(size: 18.0, middle: 0.3956),
-                          child:
-                              // Adobe XD layer: '$ 13,701 more than m' (text)
-                              Text.rich(
-                            TextSpan(
-                              style: TextStyle(
-                                fontFamily: 'Montserrat-Medium',
-                                fontSize: 14,
-                                color: const Color(0xffb4ee73),
-                              ),
-                              children: [
-                                TextSpan(
-                                  text: '\$ 13,701 ',
-                                ),
-                                TextSpan(
-                                  text: 'Current Balance',
-                                  style: TextStyle(
-                                    fontFamily: 'Montserrat-Regular',
-                                    color: const Color(0xffb1bac9),
-                                  ),
-                                ),
+                            gradient: LinearGradient(
+                              begin: Alignment(0.0, -1.0),
+                              end: Alignment(0.0, 1.0),
+                              colors: [
+                                const Color(0xff3b5998),
+                                const Color(0xff5e6168)
                               ],
+                              stops: [0.0, 1.0],
                             ),
-                            textHeightBehavior: TextHeightBehavior(
-                                applyHeightToFirstAscent: false),
-                            textAlign: TextAlign.center,
                           ),
                         ),
-                      ],
-                    ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(startFraction: 0.3484, endFraction: 0.3484),
+                        Pin(size: 32.0, middle: 0.1667),
+                        child:
+                            // Adobe XD layer: '$ 10,834' (text)
+                            Text(
+                          '\$ 10,834',
+                          style: TextStyle(
+                            fontFamily: 'Montserrat-Regular',
+                            fontSize: 26,
+                            color: const Color(0xffffffff),
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(startFraction: 0.2566, endFraction: 0.2536),
+                        Pin(size: 18.0, middle: 0.3956),
+                        child:
+                            // Adobe XD layer: '$ 13,701 more than m' (text)
+                            Text.rich(
+                          TextSpan(
+                            style: TextStyle(
+                              fontFamily: 'Montserrat-Medium',
+                              fontSize: 14,
+                              color: const Color(0xffb4ee73),
+                            ),
+                            children: [
+                              TextSpan(
+                                text: '\$ 13,701 ',
+                              ),
+                              TextSpan(
+                                text: 'Current Balance',
+                                style: TextStyle(
+                                  fontFamily: 'Montserrat-Regular',
+                                  color: const Color(0xffb1bac9),
+                                ),
+                              ),
+                            ],
+                          ),
+                          textHeightBehavior: TextHeightBehavior(
+                              applyHeightToFirstAscent: false),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ],
                   ),
-                  Pinned.fromPins(
-                    Pin(start: 0.0, end: 0.0),
-                    Pin(size: 269.0, middle: 0.3249),
-                    child:
-                        // Adobe XD layer: 'Card 2' (group)
-                        Stack(
-                      children: <Widget>[
-                        Pinned.fromPins(
-                          Pin(start: 0.0, end: 0.0),
-                          Pin(start: 0.0, end: 0.0),
-                          child:
-                              // Adobe XD layer: 'Rectangle' (shape)
-                              Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(40.0),
-                              color: const Color(0xffffffff),
+                ),
+                Pinned.fromPins(
+                  Pin(start: 0.0, end: 0.0),
+                  Pin(size: 269.0, middle: 0.3249),
+                  child:
+                      // Adobe XD layer: 'Card 2' (group)
+                      Stack(
+                    children: <Widget>[
+                      Pinned.fromPins(
+                        Pin(start: 0.0, end: 0.0),
+                        Pin(start: 0.0, end: 0.0),
+                        child:
+                            // Adobe XD layer: 'Rectangle' (shape)
+                            Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(40.0),
+                            color: const Color(0xffffffff),
+                          ),
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(size: 92.0, middle: 0.498),
+                        Pin(size: 78.2, middle: 0.304),
+                        child: Stack(
+                          children: <Widget>[
+                            Pinned.fromPins(
+                              Pin(start: 0.0, end: 0.0),
+                              Pin(start: 0.0, end: 0.0),
+                              child:
+                                  // Adobe XD layer: 'Graphic' (group)
+                                  Stack(
+                                children: <Widget>[
+                                  Pinned.fromPins(
+                                    Pin(start: 23.0, end: 23.0),
+                                    Pin(size: 46.0, end: 9.2),
+                                    child:
+                                        // Adobe XD layer: 'Oval' (shape)
+                                        Container(
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.all(
+                                            Radius.elliptical(
+                                                9999.0, 9999.0)),
+                                        color: const Color(0xff3eb4ff),
+                                      ),
+                                    ),
+                                  ),
+                                  Pinned.fromPins(
+                                    Pin(size: 27.6, start: 0.0),
+                                    Pin(size: 27.6, start: 0.0),
+                                    child:
+                                        // Adobe XD layer: 'Oval' (shape)
+                                        Container(
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.all(
+                                            Radius.elliptical(
+                                                9999.0, 9999.0)),
+                                        color: const Color(0xff0fece0),
+                                      ),
+                                    ),
+                                  ),
+                                  Pinned.fromPins(
+                                    Pin(size: 13.8, middle: 0.5),
+                                    Pin(size: 13.8, start: 4.6),
+                                    child:
+                                        // Adobe XD layer: 'Oval' (shape)
+                                        Container(
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.all(
+                                            Radius.elliptical(
+                                                9999.0, 9999.0)),
+                                        color: const Color(0xff2b6eff),
+                                      ),
+                                    ),
+                                  ),
+                                  Pinned.fromPins(
+                                    Pin(size: 23.0, end: 4.6),
+                                    Pin(size: 23.0, start: 4.6),
+                                    child:
+                                        // Adobe XD layer: 'Oval' (shape)
+                                        Container(
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.all(
+                                            Radius.elliptical(
+                                                9999.0, 9999.0)),
+                                        color: const Color(0xffb4ee73),
+                                      ),
+                                    ),
+                                  ),
+                                  Pinned.fromPins(
+                                    Pin(size: 18.4, end: 0.0),
+                                    Pin(size: 18.4, middle: 0.6154),
+                                    child:
+                                        // Adobe XD layer: 'Oval' (shape)
+                                        Container(
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.all(
+                                            Radius.elliptical(
+                                                9999.0, 9999.0)),
+                                        color: const Color(0xffee70a7),
+                                      ),
+                                    ),
+                                  ),
+                                  Pinned.fromPins(
+                                    Pin(size: 13.8, start: 13.8),
+                                    Pin(size: 13.8, end: 0.0),
+                                    child:
+                                        // Adobe XD layer: 'Oval' (shape)
+                                        Container(
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.all(
+                                            Radius.elliptical(
+                                                9999.0, 9999.0)),
+                                        color: const Color(0xffff8f00),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
-                          ),
+                          ],
                         ),
-                        Pinned.fromPins(
-                          Pin(size: 92.0, middle: 0.498),
-                          Pin(size: 78.2, middle: 0.304),
-                          child: Stack(
-                            children: <Widget>[
-                              Pinned.fromPins(
-                                Pin(start: 0.0, end: 0.0),
-                                Pin(start: 0.0, end: 0.0),
-                                child:
-                                    // Adobe XD layer: 'Graphic' (group)
-                                    Stack(
-                                  children: <Widget>[
-                                    Pinned.fromPins(
-                                      Pin(start: 23.0, end: 23.0),
-                                      Pin(size: 46.0, end: 9.2),
-                                      child:
-                                          // Adobe XD layer: 'Oval' (shape)
-                                          Container(
-                                        decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.all(
-                                              Radius.elliptical(
-                                                  9999.0, 9999.0)),
-                                          color: const Color(0xff3eb4ff),
-                                        ),
-                                      ),
-                                    ),
-                                    Pinned.fromPins(
-                                      Pin(size: 27.6, start: 0.0),
-                                      Pin(size: 27.6, start: 0.0),
-                                      child:
-                                          // Adobe XD layer: 'Oval' (shape)
-                                          Container(
-                                        decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.all(
-                                              Radius.elliptical(
-                                                  9999.0, 9999.0)),
-                                          color: const Color(0xff0fece0),
-                                        ),
-                                      ),
-                                    ),
-                                    Pinned.fromPins(
-                                      Pin(size: 13.8, middle: 0.5),
-                                      Pin(size: 13.8, start: 4.6),
-                                      child:
-                                          // Adobe XD layer: 'Oval' (shape)
-                                          Container(
-                                        decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.all(
-                                              Radius.elliptical(
-                                                  9999.0, 9999.0)),
-                                          color: const Color(0xff2b6eff),
-                                        ),
-                                      ),
-                                    ),
-                                    Pinned.fromPins(
-                                      Pin(size: 23.0, end: 4.6),
-                                      Pin(size: 23.0, start: 4.6),
-                                      child:
-                                          // Adobe XD layer: 'Oval' (shape)
-                                          Container(
-                                        decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.all(
-                                              Radius.elliptical(
-                                                  9999.0, 9999.0)),
-                                          color: const Color(0xffb4ee73),
-                                        ),
-                                      ),
-                                    ),
-                                    Pinned.fromPins(
-                                      Pin(size: 18.4, end: 0.0),
-                                      Pin(size: 18.4, middle: 0.6154),
-                                      child:
-                                          // Adobe XD layer: 'Oval' (shape)
-                                          Container(
-                                        decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.all(
-                                              Radius.elliptical(
-                                                  9999.0, 9999.0)),
-                                          color: const Color(0xffee70a7),
-                                        ),
-                                      ),
-                                    ),
-                                    Pinned.fromPins(
-                                      Pin(size: 13.8, start: 13.8),
-                                      Pin(size: 13.8, end: 0.0),
-                                      child:
-                                          // Adobe XD layer: 'Oval' (shape)
-                                          Container(
-                                        decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.all(
-                                              Radius.elliptical(
-                                                  9999.0, 9999.0)),
-                                          color: const Color(0xffff8f00),
-                                        ),
-                                      ),
-                                    ),
-                                  ],
+                      ),
+                      Pinned.fromPins(
+                        Pin(startFraction: 0.3878, endFraction: 0.3848),
+                        Pin(size: 18.0, middle: 0.1116),
+                        child:
+                            // Adobe XD layer: 'Statistics : March' (text)
+                            Text(
+                          'Statistics',
+                          style: TextStyle(
+                            fontFamily: 'Montserrat-Medium',
+                            fontSize: 14,
+                            color: const Color(0xff3b5998),
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(size: 86.5, start: 42.5),
+                        Pin(size: 65.0, end: 32.0),
+                        child:
+                            // Adobe XD layer: 'Income' (group)
+                            Stack(
+                          children: <Widget>[
+                            Pinned.fromPins(
+                              Pin(startFraction: 0.2713, endFraction: 0.0),
+                              Pin(size: 36.0, middle: 0.0),
+                              child:
+                                  // Adobe XD layer: 'Income' (text)
+                                  Text(
+                                'Earnings\nIncome',
+                                style: TextStyle(
+                                  fontFamily: 'Montserrat-Medium',
+                                  fontSize: 14,
+                                  color: const Color(0xff576c8a),
                                 ),
+                                textAlign: TextAlign.left,
                               ),
-                            ],
-                          ),
-                        ),
-                        Pinned.fromPins(
-                          Pin(startFraction: 0.3878, endFraction: 0.3848),
-                          Pin(size: 18.0, middle: 0.1116),
-                          child:
-                              // Adobe XD layer: 'Statistics : March' (text)
-                              Text(
-                            'Statistics',
-                            style: TextStyle(
-                              fontFamily: 'Montserrat-Medium',
-                              fontSize: 14,
-                              color: const Color(0xff3b5998),
                             ),
-                            textAlign: TextAlign.center,
-                          ),
+                            Pinned.fromPins(
+                              Pin(startFraction: 0.0516, endFraction: 0.0231),
+                              Pin(size: 24.0, middle: 1.0),
+                              child:
+                                  // Adobe XD layer: '$ 18,668' (text)
+                                  Text(
+                                '\$ 18,668',
+                                style: TextStyle(
+                                  fontFamily: 'Montserrat-Medium',
+                                  fontSize: 20,
+                                  color: const Color(0xff0e131e),
+                                ),
+                                textAlign: TextAlign.left,
+                              ),
+                            ),
+                            Pinned.fromPins(
+                              Pin(size: 14.0, start: 0.0),
+                              Pin(size: 14.0, middle: 0.2381),
+                              child:
+                                  // Adobe XD layer: 'Fill 1' (shape)
+                                  SvgPicture.string(
+                                _svg_h7v4wd,
+                                allowDrawingOutsideViewBox: true,
+                                fit: BoxFit.fill,
+                              ),
+                            ),
+                            Pinned.fromPins(
+                              Pin(size: 14.5, start: 0.9),
+                              Pin(size: 13.5, middle: 0.2176),
+                              child:
+                                  // Adobe XD layer: 'Fill 3' (shape)
+                                  SvgPicture.string(
+                                _svg_hcbx9t,
+                                allowDrawingOutsideViewBox: true,
+                                fit: BoxFit.fill,
+                              ),
+                            ),
+                          ],
                         ),
-                        Pinned.fromPins(
-                          Pin(size: 86.5, start: 42.5),
-                          Pin(size: 65.0, end: 32.0),
-                          child:
-                              // Adobe XD layer: 'Income' (group)
-                              Stack(
-                            children: <Widget>[
-                              Pinned.fromPins(
-                                Pin(startFraction: 0.2713, endFraction: 0.0),
-                                Pin(size: 36.0, middle: 0.0),
-                                child:
-                                    // Adobe XD layer: 'Income' (text)
-                                    Text(
-                                  'Earnings\nIncome',
-                                  style: TextStyle(
-                                    fontFamily: 'Montserrat-Medium',
-                                    fontSize: 14,
-                                    color: const Color(0xff576c8a),
-                                  ),
-                                  textAlign: TextAlign.left,
+                      ),
+                      Pinned.fromPins(
+                        Pin(size: 87.9, middle: 0.7608),
+                        Pin(size: 65.0, end: 32.0),
+                        child:
+                            // Adobe XD layer: 'Expenses' (group)
+                            Stack(
+                          children: <Widget>[
+                            Pinned.fromPins(
+                              Pin(startFraction: 0.2381, endFraction: 0.0),
+                              Pin(size: 36.0, middle: 0.0),
+                              child:
+                                  // Adobe XD layer: 'Expenses' (text)
+                                  Text(
+                                'No. of \nBranches',
+                                style: TextStyle(
+                                  fontFamily: 'Montserrat-Medium',
+                                  fontSize: 14,
+                                  color: const Color(0xff576c8a),
                                 ),
+                                textAlign: TextAlign.left,
                               ),
-                              Pinned.fromPins(
-                                Pin(startFraction: 0.0516, endFraction: 0.0231),
-                                Pin(size: 24.0, middle: 1.0),
-                                child:
-                                    // Adobe XD layer: '$ 18,668' (text)
-                                    Text(
-                                  '\$ 18,668',
-                                  style: TextStyle(
-                                    fontFamily: 'Montserrat-Medium',
-                                    fontSize: 20,
-                                    color: const Color(0xff0e131e),
-                                  ),
-                                  textAlign: TextAlign.left,
+                            ),
+                            Pinned.fromPins(
+                              Pin(startFraction: 0.113, endFraction: 0.0569),
+                              Pin(size: 24.0, middle: 1.0),
+                              child:
+                                  // Adobe XD layer: '$ 4,967' (text)
+                                  Text(
+                                '\$ 4,967',
+                                style: TextStyle(
+                                  fontFamily: 'Montserrat-Medium',
+                                  fontSize: 20,
+                                  color: const Color(0xff0e131e),
                                 ),
+                                textAlign: TextAlign.left,
                               ),
-                              Pinned.fromPins(
-                                Pin(size: 14.0, start: 0.0),
-                                Pin(size: 14.0, middle: 0.2381),
-                                child:
-                                    // Adobe XD layer: 'Fill 1' (shape)
-                                    SvgPicture.string(
-                                  _svg_h7v4wd,
-                                  allowDrawingOutsideViewBox: true,
-                                  fit: BoxFit.fill,
-                                ),
+                            ),
+                            Pinned.fromPins(
+                              Pin(size: 12.9, start: 1.3),
+                              Pin(size: 12.9, middle: 0.2325),
+                              child:
+                                  // Adobe XD layer: 'Fill 1' (shape)
+                                  SvgPicture.string(
+                                _svg_9n9um,
+                                allowDrawingOutsideViewBox: true,
+                                fit: BoxFit.fill,
                               ),
-                              Pinned.fromPins(
-                                Pin(size: 14.5, start: 0.9),
-                                Pin(size: 13.5, middle: 0.2176),
-                                child:
-                                    // Adobe XD layer: 'Fill 3' (shape)
-                                    SvgPicture.string(
-                                  _svg_hcbx9t,
-                                  allowDrawingOutsideViewBox: true,
-                                  fit: BoxFit.fill,
-                                ),
+                            ),
+                            Pinned.fromPins(
+                              Pin(size: 13.3, start: 0.0),
+                              Pin(size: 12.5, middle: 0.2554),
+                              child:
+                                  // Adobe XD layer: 'Fill 3' (shape)
+                                  SvgPicture.string(
+                                _svg_rs9qin,
+                                allowDrawingOutsideViewBox: true,
+                                fit: BoxFit.fill,
                               ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
-                        Pinned.fromPins(
-                          Pin(size: 87.9, middle: 0.7608),
-                          Pin(size: 65.0, end: 32.0),
-                          child:
-                              // Adobe XD layer: 'Expenses' (group)
-                              Stack(
-                            children: <Widget>[
-                              Pinned.fromPins(
-                                Pin(startFraction: 0.2381, endFraction: 0.0),
-                                Pin(size: 36.0, middle: 0.0),
-                                child:
-                                    // Adobe XD layer: 'Expenses' (text)
-                                    Text(
-                                  'No. of \nBranches',
-                                  style: TextStyle(
-                                    fontFamily: 'Montserrat-Medium',
-                                    fontSize: 14,
-                                    color: const Color(0xff576c8a),
-                                  ),
-                                  textAlign: TextAlign.left,
-                                ),
-                              ),
-                              Pinned.fromPins(
-                                Pin(startFraction: 0.113, endFraction: 0.0569),
-                                Pin(size: 24.0, middle: 1.0),
-                                child:
-                                    // Adobe XD layer: '$ 4,967' (text)
-                                    Text(
-                                  '\$ 4,967',
-                                  style: TextStyle(
-                                    fontFamily: 'Montserrat-Medium',
-                                    fontSize: 20,
-                                    color: const Color(0xff0e131e),
-                                  ),
-                                  textAlign: TextAlign.left,
-                                ),
-                              ),
-                              Pinned.fromPins(
-                                Pin(size: 12.9, start: 1.3),
-                                Pin(size: 12.9, middle: 0.2325),
-                                child:
-                                    // Adobe XD layer: 'Fill 1' (shape)
-                                    SvgPicture.string(
-                                  _svg_9n9um,
-                                  allowDrawingOutsideViewBox: true,
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                              Pinned.fromPins(
-                                Pin(size: 13.3, start: 0.0),
-                                Pin(size: 12.5, middle: 0.2554),
-                                child:
-                                    // Adobe XD layer: 'Fill 3' (shape)
-                                    SvgPicture.string(
-                                  _svg_rs9qin,
-                                  allowDrawingOutsideViewBox: true,
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
-                  Pinned.fromPins(
-                    Pin(start: 0.0, end: 0.0),
-                    Pin(size: 306.0, end: 0.0),
-                    child:
-                        // Adobe XD layer: 'Card 3' (group)
-                        Stack(
-                      children: <Widget>[
-                        Pinned.fromPins(
-                          Pin(start: 0.0, end: 0.0),
-                          Pin(start: 0.0, end: 0.0),
-                          child:
-                              // Adobe XD layer: 'Rectangle' (shape)
-                              Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(40.0),
-                              color: const Color(0xffffffff),
-                            ),
+                ),
+                Pinned.fromPins(
+                  Pin(start: 0.0, end: 0.0),
+                  Pin(size: 306.0, end: 0.0),
+                  child:
+                      // Adobe XD layer: 'Card 3' (group)
+                      Stack(
+                    children: <Widget>[
+                      Pinned.fromPins(
+                        Pin(start: 0.0, end: 0.0),
+                        Pin(start: 0.0, end: 0.0),
+                        child:
+                            // Adobe XD layer: 'Rectangle' (shape)
+                            Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(40.0),
+                            color: const Color(0xffffffff),
                           ),
                         ),
-                        Pinned.fromPins(
-                          Pin(start: 16.0, end: 16.0),
-                          Pin(size: 55.5, middle: 0.2954),
-                          child:
-                              // Adobe XD layer: '1' (group)
-                              Stack(
-                            children: <Widget>[
-                              Pinned.fromPins(
-                                Pin(startFraction: 0.0868, endFraction: 0.672),
-                                Pin(size: 18.0, middle: 0.0),
-                                child:
-                                    // Adobe XD layer: 'Services' (text)
-                                    Text(
-                                  'Branch - A',
-                                  style: TextStyle(
-                                    fontFamily: 'Montserrat-Medium',
-                                    fontSize: 14,
-                                    color: const Color(0xff0e131e),
-                                  ),
-                                  textAlign: TextAlign.left,
+                      ),
+                      Pinned.fromPins(
+                        Pin(start: 16.0, end: 16.0),
+                        Pin(size: 55.5, middle: 0.2954),
+                        child:
+                            // Adobe XD layer: '1' (group)
+                            Stack(
+                          children: <Widget>[
+                            Pinned.fromPins(
+                              Pin(startFraction: 0.0868, endFraction: 0.672),
+                              Pin(size: 18.0, middle: 0.0),
+                              child:
+                                  // Adobe XD layer: 'Services' (text)
+                                  Text(
+                                'Branch - A',
+                                style: TextStyle(
+                                  fontFamily: 'Montserrat-Medium',
+                                  fontSize: 14,
+                                  color: const Color(0xff0e131e),
                                 ),
+                                textAlign: TextAlign.left,
                               ),
-                              Pinned.fromPins(
-                                Pin(startFraction: 0.8103, endFraction: 0.0),
-                                Pin(size: 18.0, middle: 0.0),
-                                child:
-                                    // Adobe XD layer: '-$ 79.00' (text)
-                                    Text(
-                                  '+\$ 79.00',
-                                  style: TextStyle(
-                                    fontFamily: 'Montserrat-Medium',
-                                    fontSize: 14,
-                                    color: const Color(0xff63b706),
-                                  ),
-                                  textAlign: TextAlign.right,
+                            ),
+                            Pinned.fromPins(
+                              Pin(startFraction: 0.8103, endFraction: 0.0),
+                              Pin(size: 18.0, middle: 0.0),
+                              child:
+                                  // Adobe XD layer: '-$ 79.00' (text)
+                                  Text(
+                                '+\$ 79.00',
+                                style: TextStyle(
+                                  fontFamily: 'Montserrat-Medium',
+                                  fontSize: 14,
+                                  color: const Color(0xff63b706),
                                 ),
+                                textAlign: TextAlign.right,
                               ),
-                              Pinned.fromPins(
-                                Pin(startFraction: 0.0868, endFraction: 0.7588),
-                                Pin(size: 15.0, middle: 0.4444),
-                                child:
-                                    // Adobe XD layer: 'Pay servies Phone' (text)
-                                    Text(
-                                  'MGH231',
-                                  style: TextStyle(
-                                    fontFamily: 'Montserrat-Regular',
-                                    fontSize: 12,
-                                    color: const Color(0xff576c8a),
-                                  ),
-                                  textAlign: TextAlign.left,
+                            ),
+                            Pinned.fromPins(
+                              Pin(startFraction: 0.0868, endFraction: 0.7588),
+                              Pin(size: 15.0, middle: 0.4444),
+                              child:
+                                  // Adobe XD layer: 'Pay servies Phone' (text)
+                                  Text(
+                                'MGH231',
+                                style: TextStyle(
+                                  fontFamily: 'Montserrat-Regular',
+                                  fontSize: 12,
+                                  color: const Color(0xff576c8a),
                                 ),
+                                textAlign: TextAlign.left,
                               ),
-                              Pinned.fromPins(
-                                Pin(startFraction: 0.8778, endFraction: 0.0),
-                                Pin(size: 15.0, middle: 0.4444),
-                                child:
-                                    // Adobe XD layer: '23 Apr' (text)
-                                    Text(
-                                  '23 Apr',
-                                  style: TextStyle(
-                                    fontFamily: 'Montserrat-Regular',
-                                    fontSize: 12,
-                                    color: const Color(0xff0e131e),
-                                  ),
-                                  textAlign: TextAlign.right,
+                            ),
+                            Pinned.fromPins(
+                              Pin(startFraction: 0.8778, endFraction: 0.0),
+                              Pin(size: 15.0, middle: 0.4444),
+                              child:
+                                  // Adobe XD layer: '23 Apr' (text)
+                                  Text(
+                                '23 Apr',
+                                style: TextStyle(
+                                  fontFamily: 'Montserrat-Regular',
+                                  fontSize: 12,
+                                  color: const Color(0xff0e131e),
                                 ),
+                                textAlign: TextAlign.right,
                               ),
-                              Pinned.fromPins(
-                                Pin(start: 0.0, end: 0.0),
-                                Pin(size: 1.0, end: -1.0),
-                                child:
-                                    // Adobe XD layer: 'Line' (shape)
-                                    SvgPicture.string(
-                                  _svg_xc4qa3,
-                                  allowDrawingOutsideViewBox: true,
-                                  fit: BoxFit.fill,
+                            ),
+                            Pinned.fromPins(
+                              Pin(start: 0.0, end: 0.0),
+                              Pin(size: 1.0, end: -1.0),
+                              child:
+                                  // Adobe XD layer: 'Line' (shape)
+                                  SvgPicture.string(
+                                _svg_xc4qa3,
+                                allowDrawingOutsideViewBox: true,
+                                fit: BoxFit.fill,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(startFraction: 0.1224, endFraction: 0.6589),
+                        Pin(size: 18.0, middle: 0.5347),
+                        child:
+                            // Adobe XD layer: 'Entertainment' (text)
+                            Text(
+                          'Branch - B',
+                          style: TextStyle(
+                            fontFamily: 'Montserrat-Medium',
+                            fontSize: 14,
+                            color: const Color(0xff0e131e),
+                          ),
+                          textAlign: TextAlign.left,
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(startFraction: 0.7609, endFraction: 0.0466),
+                        Pin(size: 18.0, middle: 0.5347),
+                        child:
+                            // Adobe XD layer: '-$ 200.00' (text)
+                            Text(
+                          '-\$ 200.00',
+                          style: TextStyle(
+                            fontFamily: 'Montserrat-Medium',
+                            fontSize: 14,
+                            color: const Color(0xff63b706),
+                          ),
+                          textAlign: TextAlign.right,
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(startFraction: 0.1224, endFraction: 0.7259),
+                        Pin(size: 15.0, middle: 0.5911),
+                        child:
+                            // Adobe XD layer: 'Pay Game Coin' (text)
+                            Text(
+                          'MD8096',
+                          style: TextStyle(
+                            fontFamily: 'Montserrat-Regular',
+                            fontSize: 12,
+                            color: const Color(0xff576c8a),
+                          ),
+                          textAlign: TextAlign.left,
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(startFraction: 0.8426, endFraction: 0.0466),
+                        Pin(size: 15.0, middle: 0.5911),
+                        child:
+                            // Adobe XD layer: '22 Apr' (text)
+                            Text(
+                          '22 Apr',
+                          style: TextStyle(
+                            fontFamily: 'Montserrat-Regular',
+                            fontSize: 12,
+                            color: const Color(0xff0e131e),
+                          ),
+                          textAlign: TextAlign.right,
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(start: 16.0, end: 16.0),
+                        Pin(size: 1.0, middle: 0.6869),
+                        child:
+                            // Adobe XD layer: 'Line' (shape)
+                            SvgPicture.string(
+                          _svg_lk1wdh,
+                          allowDrawingOutsideViewBox: true,
+                          fit: BoxFit.fill,
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(startFraction: 0.1254, endFraction: 0.6647),
+                        Pin(size: 18.0, middle: 0.8125),
+                        child:
+                            // Adobe XD layer: 'Health' (text)
+                            Text(
+                          'CheckOut',
+                          style: TextStyle(
+                            fontFamily: 'Montserrat-Medium',
+                            fontSize: 14,
+                            color: const Color(0xff0e131e),
+                          ),
+                          textAlign: TextAlign.left,
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(startFraction: 0.7638, endFraction: 0.0466),
+                        Pin(size: 18.0, middle: 0.8125),
+                        child:
+                            // Adobe XD layer: '-$ 360.00' (text)
+                            Text(
+                          '-\$ 360.00',
+                          style: TextStyle(
+                            fontFamily: 'Montserrat-Medium',
+                            fontSize: 14,
+                            color: const Color(0xffff7362),
+                          ),
+                          textAlign: TextAlign.right,
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(startFraction: 0.1254, endFraction: 0.484),
+                        Pin(size: 15.0, middle: 0.866),
+                        child:
+                            // Adobe XD layer: 'Physical Exam' (text)
+                            Text(
+                          'Credited to your bank ',
+                          style: TextStyle(
+                            fontFamily: 'Montserrat-Regular',
+                            fontSize: 12,
+                            color: const Color(0xff576c8a),
+                          ),
+                          textAlign: TextAlign.left,
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(startFraction: 0.8426, endFraction: 0.0466),
+                        Pin(size: 15.0, middle: 0.866),
+                        child:
+                            // Adobe XD layer: '22 Apr' (text)
+                            Text(
+                          '22 Apr',
+                          style: TextStyle(
+                            fontFamily: 'Montserrat-Regular',
+                            fontSize: 12,
+                            color: const Color(0xff0e131e),
+                          ),
+                          textAlign: TextAlign.right,
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(size: 148.0, middle: 0.5026),
+                        Pin(size: 22.0, start: 29.0),
+                        child:
+                            // Adobe XD layer: 'Transactions' (group)
+                            Stack(
+                          children: <Widget>[
+                            Pinned.fromPins(
+                              Pin(startFraction: 0.0, endFraction: 0.0),
+                              Pin(size: 22.0, middle: 0.5),
+                              child:
+                                  // Adobe XD layer: 'Transactions' (text)
+                                  Text(
+                                'Transactions',
+                                style: TextStyle(
+                                  fontFamily: 'Montserrat',
+                                  fontSize: 18,
+                                  color: const Color(0xff3b5998),
+                                  fontWeight: FontWeight.w600,
                                 ),
+                                textAlign: TextAlign.center,
                               ),
-                            ],
-                          ),
-                        ),
-                        Pinned.fromPins(
-                          Pin(startFraction: 0.1224, endFraction: 0.6589),
-                          Pin(size: 18.0, middle: 0.5347),
-                          child:
-                              // Adobe XD layer: 'Entertainment' (text)
-                              Text(
-                            'Branch - B',
-                            style: TextStyle(
-                              fontFamily: 'Montserrat-Medium',
-                              fontSize: 14,
-                              color: const Color(0xff0e131e),
                             ),
-                            textAlign: TextAlign.left,
-                          ),
+                          ],
                         ),
-                        Pinned.fromPins(
-                          Pin(startFraction: 0.7609, endFraction: 0.0466),
-                          Pin(size: 18.0, middle: 0.5347),
-                          child:
-                              // Adobe XD layer: '-$ 200.00' (text)
-                              Text(
-                            '-\$ 200.00',
-                            style: TextStyle(
-                              fontFamily: 'Montserrat-Medium',
-                              fontSize: 14,
-                              color: const Color(0xff63b706),
-                            ),
-                            textAlign: TextAlign.right,
-                          ),
-                        ),
-                        Pinned.fromPins(
-                          Pin(startFraction: 0.1224, endFraction: 0.7259),
-                          Pin(size: 15.0, middle: 0.5911),
-                          child:
-                              // Adobe XD layer: 'Pay Game Coin' (text)
-                              Text(
-                            'MD8096',
-                            style: TextStyle(
-                              fontFamily: 'Montserrat-Regular',
-                              fontSize: 12,
-                              color: const Color(0xff576c8a),
-                            ),
-                            textAlign: TextAlign.left,
-                          ),
-                        ),
-                        Pinned.fromPins(
-                          Pin(startFraction: 0.8426, endFraction: 0.0466),
-                          Pin(size: 15.0, middle: 0.5911),
-                          child:
-                              // Adobe XD layer: '22 Apr' (text)
-                              Text(
-                            '22 Apr',
-                            style: TextStyle(
-                              fontFamily: 'Montserrat-Regular',
-                              fontSize: 12,
-                              color: const Color(0xff0e131e),
-                            ),
-                            textAlign: TextAlign.right,
-                          ),
-                        ),
-                        Pinned.fromPins(
-                          Pin(start: 16.0, end: 16.0),
-                          Pin(size: 1.0, middle: 0.6869),
-                          child:
-                              // Adobe XD layer: 'Line' (shape)
-                              SvgPicture.string(
-                            _svg_lk1wdh,
-                            allowDrawingOutsideViewBox: true,
-                            fit: BoxFit.fill,
-                          ),
-                        ),
-                        Pinned.fromPins(
-                          Pin(startFraction: 0.1254, endFraction: 0.6647),
-                          Pin(size: 18.0, middle: 0.8125),
-                          child:
-                              // Adobe XD layer: 'Health' (text)
-                              Text(
-                            'CheckOut',
-                            style: TextStyle(
-                              fontFamily: 'Montserrat-Medium',
-                              fontSize: 14,
-                              color: const Color(0xff0e131e),
-                            ),
-                            textAlign: TextAlign.left,
-                          ),
-                        ),
-                        Pinned.fromPins(
-                          Pin(startFraction: 0.7638, endFraction: 0.0466),
-                          Pin(size: 18.0, middle: 0.8125),
-                          child:
-                              // Adobe XD layer: '-$ 360.00' (text)
-                              Text(
-                            '-\$ 360.00',
-                            style: TextStyle(
-                              fontFamily: 'Montserrat-Medium',
-                              fontSize: 14,
-                              color: const Color(0xffff7362),
-                            ),
-                            textAlign: TextAlign.right,
-                          ),
-                        ),
-                        Pinned.fromPins(
-                          Pin(startFraction: 0.1254, endFraction: 0.484),
-                          Pin(size: 15.0, middle: 0.866),
-                          child:
-                              // Adobe XD layer: 'Physical Exam' (text)
-                              Text(
-                            'Credited to your bank ',
-                            style: TextStyle(
-                              fontFamily: 'Montserrat-Regular',
-                              fontSize: 12,
-                              color: const Color(0xff576c8a),
-                            ),
-                            textAlign: TextAlign.left,
-                          ),
-                        ),
-                        Pinned.fromPins(
-                          Pin(startFraction: 0.8426, endFraction: 0.0466),
-                          Pin(size: 15.0, middle: 0.866),
-                          child:
-                              // Adobe XD layer: '22 Apr' (text)
-                              Text(
-                            '22 Apr',
-                            style: TextStyle(
-                              fontFamily: 'Montserrat-Regular',
-                              fontSize: 12,
-                              color: const Color(0xff0e131e),
-                            ),
-                            textAlign: TextAlign.right,
-                          ),
-                        ),
-                        Pinned.fromPins(
-                          Pin(size: 148.0, middle: 0.5026),
-                          Pin(size: 22.0, start: 29.0),
-                          child:
-                              // Adobe XD layer: 'Transactions' (group)
-                              Stack(
-                            children: <Widget>[
-                              Pinned.fromPins(
-                                Pin(startFraction: 0.0, endFraction: 0.0),
-                                Pin(size: 22.0, middle: 0.5),
-                                child:
-                                    // Adobe XD layer: 'Transactions' (text)
-                                    Text(
-                                  'Transactions',
-                                  style: TextStyle(
-                                    fontFamily: 'Montserrat',
-                                    fontSize: 18,
-                                    color: const Color(0xff3b5998),
-                                    fontWeight: FontWeight.w600,
-                                  ),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
         ],
