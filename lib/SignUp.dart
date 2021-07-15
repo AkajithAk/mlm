@@ -747,19 +747,20 @@ class SignUp extends StatelessWidget {
                     ],
                   ),
                 ),
-                Pinned.fromPins(
-                  Pin(size: 311.0, middle: 0.492),
-                  Pin(size: 60.0, middle: 0.3513),
-                  child:
-                      // Adobe XD layer: 'Rectangle' (shape)
-                      SvgPicture.string(
-                    _svg_wbrsba,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
-                  ),
-                ),
+                // Pinned.fromPins(
+                //   Pin(size: 311.0, middle: 0.492),
+                //   Pin(size: 60.0, middle: 0.3513),
+                //   child:
+                //       // Adobe XD layer: 'Rectangle' (shape)
+                //       SvgPicture.string(
+                //     _svg_wbrsba,
+                //     allowDrawingOutsideViewBox: true,
+                //     fit: BoxFit.fill,
+                //   ),
+                // ),
 
                 Padding(
+                  
                   padding: const EdgeInsets.only(top:320.0,left: 120,right: 120),
                   child: TextField(
   decoration: new InputDecoration(
@@ -789,17 +790,17 @@ class SignUp extends StatelessWidget {
                 //     textAlign: TextAlign.left,
                 //   ),
                 // ),
-                Pinned.fromPins(
-                  Pin(size: 311.0, middle: 0.492),
-                  Pin(size: 60.0, middle: 0.4371),
-                  child:
-                      // Adobe XD layer: 'Rectangle' (shape)
-                      SvgPicture.string(
-                    _svg_iafrb4,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
-                  ),
-                ),
+                // Pinned.fromPins(
+                //   Pin(size: 311.0, middle: 0.492),
+                //   Pin(size: 60.0, middle: 0.4371),
+                //   child:
+                //       // Adobe XD layer: 'Rectangle' (shape)
+                //       SvgPicture.string(
+                //     _svg_iafrb4,
+                //     allowDrawingOutsideViewBox: true,
+                //     fit: BoxFit.fill,
+                //   ),
+                // ),
 
                 Padding(
                   padding: const EdgeInsets.only(top:395.0,left: 120,right: 120),
@@ -865,18 +866,42 @@ class SignUp extends StatelessWidget {
                     ),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(top:560.0,left: 120),
-                  child: Container(
-                    height: 60,
-                    width: 310,
+                // Padding(
+                //   padding: const EdgeInsets.only(top:560.0,left: 120),
+                //   child: Container(
+                //     height: 60,
+                //     width: 310,
                     
-                      child:RaisedButton(
-                        color: Colors.white,
-                        onPressed: (){
-                          Navigator.of(context).pushReplacement(MaterialPageRoute(
+                //       child:RaisedButton(
+                //         color: Colors.white,
+                //         onPressed: (){
+                //           Navigator.of(context).pushReplacement(MaterialPageRoute(
+                //       builder: (BuildContext context) => OTP()));
+                //         },child: Text(
+                //         'Create account',
+                //         style: TextStyle(
+                //           fontFamily: 'Montserrat-Regular',
+                //           fontSize: 16,
+                //           color: const Color(0xff007bff),
+                //         ),
+                //         textAlign: TextAlign.center,
+                //       ),)
+                //           // Adobe XD layer: 'Create account' (text)
+                          
+                  
+                //   ),
+                // ),
+                InkWell(
+                  onTap: (){
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(
                       builder: (BuildContext context) => OTP()));
-                        },child: Text(
+                  },
+                  child: Pinned.fromPins(
+                      Pin(startFraction: 0.3817, endFraction: 0.3844),
+                      Pin(size: 19.0, middle: 0.6153),
+                      child:
+                          // Adobe XD layer: 'Create account' (text)
+                          Text(
                         'Create account',
                         style: TextStyle(
                           fontFamily: 'Montserrat-Regular',
@@ -884,11 +909,8 @@ class SignUp extends StatelessWidget {
                           color: const Color(0xff007bff),
                         ),
                         textAlign: TextAlign.center,
-                      ),)
-                          // Adobe XD layer: 'Create account' (text)
-                          
-                  
-                  ),
+                      ),
+                    ),
                 ),
                 Pinned.fromPins(
                   Pin(size: 311.0, middle: 0.492),
@@ -973,17 +995,17 @@ class SignUp extends StatelessWidget {
                     ],
                   ),
                 ),
-                Pinned.fromPins(
-                  Pin(size: 311.0, middle: 0.492),
-                  Pin(size: 60.0, middle: 0.5263),
-                  child:
-                      // Adobe XD layer: 'Rectangle' (shape)
-                      SvgPicture.string(
-                    _svg_mu1m9y,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
-                  ),
-                ),
+                // Pinned.fromPins(
+                //   Pin(size: 311.0, middle: 0.492),
+                //   Pin(size: 60.0, middle: 0.5263),
+                //   child:
+                //       // Adobe XD layer: 'Rectangle' (shape)
+                //       SvgPicture.string(
+                //     _svg_mu1m9y,
+                //     allowDrawingOutsideViewBox: true,
+                //     fit: BoxFit.fill,
+                //   ),
+                // ),
                 Padding(
                   padding: const EdgeInsets.only(top:478.0,left: 120,right: 120),
                   child: TextField(

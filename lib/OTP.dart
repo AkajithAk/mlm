@@ -697,45 +697,51 @@ class OTP extends StatelessWidget {
                     ),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(top:400.0,left: 120),
-                  child: Container(
-                    height: 60,
-                    width: 310,
+                // Padding(
+                //   padding: const EdgeInsets.only(top:400.0,left: 120),
+                //   child: Container(
+                //     height: 60,
+                //     width: 310,
                     
-                      child:RaisedButton(
-                        color: Colors.white,
-                        onPressed: (){
-                          Navigator.of(context).pushReplacement(MaterialPageRoute(
-                      builder: (BuildContext context) => Login()));
-                        },child: Text(
-                    'Confirm Account',
-                    style: TextStyle(
-                      fontFamily: 'Montserrat-Regular',
-                      fontSize: 16,
-                      color: const Color(0xff007bff),
-                    ),)
-                      )
-                          // Adobe XD layer: 'Create account' (text)
-                          
-                  
-                  ),
-                ),
-                // Pinned.fromPins(
-                //   Pin(startFraction: 0.3664, endFraction: 0.369),
-                //   Pin(size: 19.0, middle: 0.4468),
-                //   child:
-                //       // Adobe XD layer: 'Create account' (text)
-                //       Text(
+                //       child:RaisedButton(
+                //         color: Colors.white,
+                //         onPressed: (){
+                //           Navigator.of(context).pushReplacement(MaterialPageRoute(
+                //       builder: (BuildContext context) => Login()));
+                //         },child: Text(
                 //     'Confirm Account',
                 //     style: TextStyle(
                 //       fontFamily: 'Montserrat-Regular',
                 //       fontSize: 16,
                 //       color: const Color(0xff007bff),
-                //     ),
-                //     textAlign: TextAlign.center,
+                //     ),)
+                //       )
+                //           // Adobe XD layer: 'Create account' (text)
+                          
+                  
                 //   ),
                 // ),
+                InkWell(
+                  onTap: (){
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(
+                      builder: (BuildContext context) => Login()));
+                  },
+                  child: Pinned.fromPins(
+                    Pin(startFraction: 0.3664, endFraction: 0.369),
+                    Pin(size: 19.0, middle: 0.4468),
+                    child:
+                        // Adobe XD layer: 'Create account' (text)
+                        Text(
+                      'Confirm Account',
+                      style: TextStyle(
+                        fontFamily: 'Montserrat-Regular',
+                        fontSize: 16,
+                        color: const Color(0xff007bff),
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                ),
                 Pinned.fromPins(
                   Pin(size: 311.0, middle: 0.492),
                   Pin(size: 25.0, middle: 0.2908),

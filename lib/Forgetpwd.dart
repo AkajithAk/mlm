@@ -683,45 +683,51 @@ class Forgetpwd extends StatelessWidget {
                   ),
                 ),
 
-                Padding(
-                  padding: const EdgeInsets.only(top:400.0,left: 120),
-                  child: Container(
-                    height: 60,
-                    width: 310,
+                // Padding(
+                //   padding: const EdgeInsets.only(top:400.0,left: 120),
+                //   child: Container(
+                //     height: 60,
+                //     width: 310,
                     
-                      child:RaisedButton(
-                        color: Colors.white,
-                        onPressed: (){
-                          Navigator.of(context).pushReplacement(MaterialPageRoute(
-                      builder: (BuildContext context) => HomeBalance1()));
-                        },child:  Text(
-                    'Submit',
-                    style: TextStyle(
-                      fontFamily: 'Montserrat-Regular',
-                      fontSize: 16,
-                      color: const Color(0xff007bff),
-                    ),)
-                      )
-                          // Adobe XD layer: 'Create account' (text)
-                          
-                  
-                  ),
-                ),
-                // Pinned.fromPins(
-                //   Pin(startFraction: 0.4412, endFraction: 0.4438),
-                //   Pin(size: 19.0, middle: 0.4468),
-                //   child:
-                //       // Adobe XD layer: 'Create account' (text)
-                //       Text(
+                //       child:RaisedButton(
+                //         color: Colors.white,
+                //         onPressed: (){
+                //           Navigator.of(context).pushReplacement(MaterialPageRoute(
+                //       builder: (BuildContext context) => HomeBalance1()));
+                //         },child:  Text(
                 //     'Submit',
                 //     style: TextStyle(
                 //       fontFamily: 'Montserrat-Regular',
                 //       fontSize: 16,
                 //       color: const Color(0xff007bff),
-                //     ),
-                //     textAlign: TextAlign.center,
+                //     ),)
+                //       )
+                //           // Adobe XD layer: 'Create account' (text)
+                          
+                  
                 //   ),
                 // ),
+                InkWell(
+                  onTap: (){
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(
+                      builder: (BuildContext context) => HomeBalance1()));
+                  },
+                  child: Pinned.fromPins(
+                    Pin(startFraction: 0.4412, endFraction: 0.4438),
+                    Pin(size: 19.0, middle: 0.4468),
+                    child:
+                        // Adobe XD layer: 'Create account' (text)
+                        Text(
+                      'Submit',
+                      style: TextStyle(
+                        fontFamily: 'Montserrat-Regular',
+                        fontSize: 16,
+                        color: const Color(0xff007bff),
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                ),
                 Container(),
                 Container(),
                 Pinned.fromPins(

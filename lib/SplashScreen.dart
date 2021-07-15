@@ -881,7 +881,7 @@ class SplashScreen extends StatelessWidget {
                                     child:
                                         // Adobe XD layer: 'AIF' (text)
                                         Text(
-                                      'ISHAKTHI',
+                                      'MYSHAKTHI',
                                       style: TextStyle(
                                         fontFamily: 'Montserrat-Bold',
                                         fontSize: 29,

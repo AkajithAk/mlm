@@ -827,54 +827,60 @@ class Login extends StatelessWidget {
                   ),
                 ),
 
-                 Padding(
-                    padding: const EdgeInsets.only(top:480.0,left: 120),
-                    child: Container(
-                      height: 60,
-                      width: 310,
+                //  Padding(
+                //     padding: const EdgeInsets.only(top:480.0,left: 120),
+                //     child: Container(
+                //       height: 60,
+                //       width: 310,
                       
-                        child:RaisedButton(
-                          color: Colors.white,
-                          onPressed: (){
-                        //     Navigator.of(context).pushReplacement(MaterialPageRoute(
-                        // builder: (BuildContext context) => Forgetpwd()));
-                          },child: Text(
-                    'Login',
-                    style: TextStyle(
-                      fontFamily: 'Montserrat-Regular',
-                      fontSize: 16,
-                      color: const Color(0xff007bff),
-                    ),)
-                        )
-                            // Adobe XD layer: 'Create account' (text)
-                            
-                    
-                    ),
-                  ),
-                // Pinned.fromPins(
-                //   Pin(startFraction: 0.4546, endFraction: 0.4572),
-                //   Pin(size: 19.0, middle: 0.5236),
-                //   child:
-                //       // Adobe XD layer: 'Create account' (text)
-                //       Text(
+                //         child:RaisedButton(
+                //           color: Colors.white,
+                //           onPressed: (){
+                //         //     Navigator.of(context).pushReplacement(MaterialPageRoute(
+                //         // builder: (BuildContext context) => Forgetpwd()));
+                //           },child: Text(
                 //     'Login',
                 //     style: TextStyle(
                 //       fontFamily: 'Montserrat-Regular',
                 //       fontSize: 16,
                 //       color: const Color(0xff007bff),
+                //     ),)
+                //         )
+                //             // Adobe XD layer: 'Create account' (text)
+                            
+                    
                 //     ),
-                //     textAlign: TextAlign.center,
                 //   ),
-                // ),
-                Container(),
                 InkWell(
                   onTap: (){
                     Navigator.of(context).pushReplacement(MaterialPageRoute(
                         builder: (BuildContext context) => Forgetpwd()));
                   },
                   child: Pinned.fromPins(
-                    Pin(size: 150.0, middle: 0.4968),
-                    Pin(size: 16.0, end: 391.8),
+                    Pin(startFraction: 0.4546, endFraction: 0.4572),
+                    Pin(size: 19.0, middle: 0.5236),
+                    child:
+                        // Adobe XD layer: 'Create account' (text)
+                        Text(
+                      'Login',
+                      style: TextStyle(
+                        fontFamily: 'Montserrat-Regular',
+                        fontSize: 16,
+                        color: const Color(0xff007bff),
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                ),
+                Container(),
+                Pinned.fromPins(
+                  Pin(size: 150.0, middle: 0.4968),
+                  Pin(size: 16.0, end: 391.8),
+                  child: GestureDetector(
+                    onTap: (){
+                       Navigator.of(context).pushReplacement(MaterialPageRoute(
+                        builder: (BuildContext context) => Forgetpwd()));
+                    },
                     child: Text(
                       'Forget your password?',
                       style: TextStyle(

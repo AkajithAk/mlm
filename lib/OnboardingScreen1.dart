@@ -684,31 +684,55 @@ class OnboardingScreen1 extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            Container(
-                              width: 200,
-                              height: 60,
-                              child: RaisedButton(
-                                color: Colors.black,
-                                onPressed: () {
+                              InkWell(
+                                onTap: (){
+                                   
                                   Navigator.of(context)
                                       .pushNamed(OnboardingScreen2.routname);
+                               
                                 },
-                                // Pin(startFraction: 0.3417, endFraction: 0.3417),
-                                // Pin(size: 19.0, middle: 0.5161),
-                                child:
-                                    // Adobe XD layer: 'Next' (text)
-                                    Text(
-                                  'Next',
-                                  style: TextStyle(
-                                    fontFamily: 'Montserrat',
-                                    fontSize: 16,
-                                    color: const Color(0xffffffff),
-                                    fontWeight: FontWeight.w500,
+                                child: Pinned.fromPins(
+                                  Pin(startFraction: 0.3417, endFraction: 0.3417),
+                                  Pin(size: 19.0, middle: 0.5161),
+                                  child:
+                                      // Adobe XD layer: 'Next' (text)
+                                      Text(
+                                    'Next',
+                                    style: TextStyle(
+                                      fontFamily: 'Montserrat',
+                                      fontSize: 16,
+                                      color: const Color(0xffffffff),
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                    textAlign: TextAlign.center,
                                   ),
-                                  textAlign: TextAlign.center,
                                 ),
                               ),
-                            ),
+                            // Container(
+                            //   width: 200,
+                            //   height: 60,
+                            //   child: RaisedButton(
+                            //     color: Colors.black,
+                            //     onPressed: () {
+                            //       Navigator.of(context)
+                            //           .pushNamed(OnboardingScreen2.routname);
+                            //     },
+                            //     // Pin(startFraction: 0.3417, endFraction: 0.3417),
+                            //     // Pin(size: 19.0, middle: 0.5161),
+                            //     child:
+                            //         // Adobe XD layer: 'Next' (text)
+                            //         Text(
+                            //       'Next',
+                            //       style: TextStyle(
+                            //         fontFamily: 'Montserrat',
+                            //         fontSize: 16,
+                            //         color: const Color(0xffffffff),
+                            //         fontWeight: FontWeight.w500,
+                            //       ),
+                            //       textAlign: TextAlign.center,
+                            //     ),
+                            //   ),
+                            // ),
                           ],
                         ),
                       ),
