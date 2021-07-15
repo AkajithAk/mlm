@@ -639,7 +639,9 @@ class SplashScreen2 extends StatelessWidget {
                         ),
                       ),
                       InkWell(
-                        onTap: ()=>Navigator.of(context).pushNamed(Login.routname),
+                        onTap: ()=>Navigator.of(context).pushReplacement(MaterialPageRoute(
+                      builder: (BuildContext context) => SignUp()))
+                        ,
                         child: Pinned.fromPins(
                           Pin(startFraction: 0.388, endFraction: 0.4033),
                           Pin(size: 20.0, middle: 0.45),

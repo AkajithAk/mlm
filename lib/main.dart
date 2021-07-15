@@ -40,8 +40,9 @@ class MyApp extends StatelessWidget {
         SplashScreen.routname: (ctx) => SplashScreen(),
         SignUp.routname: (ctx) => SignUp(),
         Login.routname: (ctx) => Login(),
-        OTP.routname: (ctx) => OTP(),
-        Forgetpwd.routname: (ctx) => Forgetpwd(),}
+        // OTP.routname: (ctx) => OTP(),
+        // Forgetpwd.routname: (ctx) => Forgetpwd(),
+        }
     );
   }
 }

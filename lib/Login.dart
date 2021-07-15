@@ -613,7 +613,7 @@ class Login extends StatelessWidget {
                   child:
                       // Adobe XD layer: 'Group 5' (group)
                       InkWell(
-                        onTap: Navigator.of(context).pop,
+                        onTap: (){},
                         child: Stack(
                                           children: <Widget>[
                         Pinned.fromPins(
@@ -868,7 +868,10 @@ class Login extends StatelessWidget {
                 // ),
                 Container(),
                 InkWell(
-                  onTap: ()=>Navigator.of(context).pushNamed(Forgetpwd.routname),
+                  onTap: (){
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(
+                        builder: (BuildContext context) => Forgetpwd()));
+                  },
                   child: Pinned.fromPins(
                     Pin(size: 150.0, middle: 0.4968),
                     Pin(size: 16.0, end: 391.8),
