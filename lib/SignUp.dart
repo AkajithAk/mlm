@@ -758,21 +758,37 @@ class SignUp extends StatelessWidget {
                     fit: BoxFit.fill,
                   ),
                 ),
-                Pinned.fromPins(
-                  Pin(startFraction: 0.2293, endFraction: 0.6326),
-                  Pin(size: 18.0, middle: 0.359),
-                  child:
-                      // Adobe XD layer: 'Email' (text)
-                      Text(
-                    'Full Name',
-                    style: TextStyle(
-                      fontFamily: 'Montserrat-Regular',
-                      fontSize: 14,
-                      color: const Color(0xffb1bac9),
-                    ),
-                    textAlign: TextAlign.left,
-                  ),
+
+                Padding(
+                  padding: const EdgeInsets.only(top:320.0,left: 120,right: 120),
+                  child: TextField(
+  decoration: new InputDecoration(
+      border: new OutlineInputBorder(
+        borderRadius: const BorderRadius.all(
+          const Radius.circular(10.0),
+        ),
+      ),
+      filled: true,
+      hintStyle: new TextStyle(color: Colors.grey[800]),
+      hintText: 'Full Name',
+      fillColor: Colors.white70),
+),
                 ),
+                // Pinned.fromPins(
+                //   Pin(startFraction: 0.2293, endFraction: 0.6326),
+                //   Pin(size: 18.0, middle: 0.359),
+                //   child:
+                //       // Adobe XD layer: 'Email' (text)
+                //       Text(
+                //     'Full Name',
+                //     style: TextStyle(
+                //       fontFamily: 'Montserrat-Regular',
+                //       fontSize: 14,
+                //       color: const Color(0xffb1bac9),
+                //     ),
+                //     textAlign: TextAlign.left,
+                //   ),
+                // ),
                 Pinned.fromPins(
                   Pin(size: 311.0, middle: 0.492),
                   Pin(size: 60.0, middle: 0.4371),
@@ -784,21 +800,37 @@ class SignUp extends StatelessWidget {
                     fit: BoxFit.fill,
                   ),
                 ),
-                Pinned.fromPins(
-                  Pin(startFraction: 0.2293, endFraction: 0.6767),
-                  Pin(size: 18.0, middle: 0.4399),
-                  child:
-                      // Adobe XD layer: 'Password' (text)
-                      Text(
-                    'Mail ID',
-                    style: TextStyle(
-                      fontFamily: 'Montserrat-Regular',
-                      fontSize: 14,
-                      color: const Color(0xffb1bac9),
-                    ),
-                    textAlign: TextAlign.left,
-                  ),
+
+                Padding(
+                  padding: const EdgeInsets.only(top:395.0,left: 120,right: 120),
+                  child: TextField(
+  decoration: new InputDecoration(
+      border: new OutlineInputBorder(
+        borderRadius: const BorderRadius.all(
+          const Radius.circular(10.0),
+        ),
+      ),
+      filled: true,
+      hintStyle: new TextStyle(color: Colors.grey[800]),
+      hintText: 'Mail id',
+      fillColor: Colors.white70),
+),
                 ),
+                // Pinned.fromPins(
+                //   Pin(startFraction: 0.2293, endFraction: 0.6767),
+                //   Pin(size: 18.0, middle: 0.4399),
+                //   child:
+                //       // Adobe XD layer: 'Password' (text)
+                //       Text(
+                //     'Mail ID',
+                //     style: TextStyle(
+                //       fontFamily: 'Montserrat-Regular',
+                //       fontSize: 14,
+                //       color: const Color(0xffb1bac9),
+                //     ),
+                //     textAlign: TextAlign.left,
+                //   ),
+                // ),
                 Pinned.fromPins(
                   Pin(startFraction: 0.1986, endFraction: 0.2051),
                   Pin(size: 18.0, middle: 0.2993),
@@ -952,21 +984,36 @@ class SignUp extends StatelessWidget {
                     fit: BoxFit.fill,
                   ),
                 ),
-                Pinned.fromPins(
-                  Pin(startFraction: 0.2293, endFraction: 0.6882),
-                  Pin(size: 18.0, middle: 0.5252),
-                  child:
-                      // Adobe XD layer: 'Password' (text)
-                      Text(
-                    'Ph No',
-                    style: TextStyle(
-                      fontFamily: 'Montserrat-Regular',
-                      fontSize: 14,
-                      color: const Color(0xffb1bac9),
-                    ),
-                    textAlign: TextAlign.left,
-                  ),
+                Padding(
+                  padding: const EdgeInsets.only(top:478.0,left: 120,right: 120),
+                  child: TextField(
+  decoration: new InputDecoration(
+      border: new OutlineInputBorder(
+        borderRadius: const BorderRadius.all(
+          const Radius.circular(10.0),
+        ),
+      ),
+      filled: true,
+      hintStyle: new TextStyle(color: Colors.grey[800]),
+      hintText: 'Ph No',
+      fillColor: Colors.white70),
+),
                 ),
+                // Pinned.fromPins(
+                //   Pin(startFraction: 0.2293, endFraction: 0.6882),
+                //   Pin(size: 18.0, middle: 0.5252),
+                //   child:
+                //       // Adobe XD layer: 'Password' (text)
+                //       Text(
+                //     'Ph No',
+                //     style: TextStyle(
+                //       fontFamily: 'Montserrat-Regular',
+                //       fontSize: 14,
+                //       color: const Color(0xffb1bac9),
+                //     ),
+                //     textAlign: TextAlign.left,
+                //   ),
+                // ),
                 Container(),
               ],
             ),
