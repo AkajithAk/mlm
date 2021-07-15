@@ -836,8 +836,8 @@ class Login extends StatelessWidget {
                         child:RaisedButton(
                           color: Colors.white,
                           onPressed: (){
-                            Navigator.of(context).pushReplacement(MaterialPageRoute(
-                        builder: (BuildContext context) => Forgetpwd()));
+                        //     Navigator.of(context).pushReplacement(MaterialPageRoute(
+                        // builder: (BuildContext context) => Forgetpwd()));
                           },child: Text(
                     'Login',
                     style: TextStyle(
