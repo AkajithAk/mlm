@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import 'Forgetpwd.dart';
+
 class Login extends StatelessWidget {
   Login({
     Key? key,
@@ -819,21 +821,46 @@ class Login extends StatelessWidget {
                     ),
                   ),
                 ),
-                Pinned.fromPins(
-                  Pin(startFraction: 0.4546, endFraction: 0.4572),
-                  Pin(size: 19.0, middle: 0.5236),
-                  child:
-                      // Adobe XD layer: 'Create account' (text)
-                      Text(
+
+                 Padding(
+                    padding: const EdgeInsets.only(top:480.0,left: 120),
+                    child: Container(
+                      height: 60,
+                      width: 310,
+                      
+                        child:RaisedButton(
+                          color: Colors.white,
+                          onPressed: (){
+                            Navigator.of(context).pushReplacement(MaterialPageRoute(
+                        builder: (BuildContext context) => Forgetpwd()));
+                          },child: Text(
                     'Login',
                     style: TextStyle(
                       fontFamily: 'Montserrat-Regular',
                       fontSize: 16,
                       color: const Color(0xff007bff),
+                    ),)
+                        )
+                            // Adobe XD layer: 'Create account' (text)
+                            
+                    
                     ),
-                    textAlign: TextAlign.center,
                   ),
-                ),
+                // Pinned.fromPins(
+                //   Pin(startFraction: 0.4546, endFraction: 0.4572),
+                //   Pin(size: 19.0, middle: 0.5236),
+                //   child:
+                //       // Adobe XD layer: 'Create account' (text)
+                //       Text(
+                //     'Login',
+                //     style: TextStyle(
+                //       fontFamily: 'Montserrat-Regular',
+                //       fontSize: 16,
+                //       color: const Color(0xff007bff),
+                //     ),
+                //     textAlign: TextAlign.center,
+                //   ),
+                // ),
                 Container(),
                 Pinned.fromPins(
                   Pin(size: 150.0, middle: 0.4968),

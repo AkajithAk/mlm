@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'OnboardingScreen1.dart';
+import 'SignUp.dart';
 
 void main() {
   runApp(MyApp());
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: OnboardingScreen1(),
+      home: SignUp(),
     );
   }
 }
