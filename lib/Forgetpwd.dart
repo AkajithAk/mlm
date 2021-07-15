@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import './HomeBalance1.dart';
-import 'package:adobe_xd/page_link.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Forgetpwd extends StatelessWidget {
+  static const routname = "/forgetpswd";
   Forgetpwd({
     Key? key,
   }) : super(key: key);

@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:mlm/SplashScreen.dart';
 
 import 'Forgetpwd.dart';
 
 class Login extends StatelessWidget {
+  static const routname = "/login";
   Login({
     Key? key,
   }) : super(key: key);
@@ -610,32 +612,35 @@ class Login extends StatelessWidget {
                   Pin(size: 19.4, start: 54.0),
                   child:
                       // Adobe XD layer: 'Group 5' (group)
-                      Stack(
-                    children: <Widget>[
-                      Pinned.fromPins(
-                        Pin(start: 2.6, end: 0.0),
-                        Pin(size: 2.8, middle: 0.5),
-                        child:
-                            // Adobe XD layer: 'Fill 1' (shape)
-                            SvgPicture.string(
-                          _svg_nahbd9,
-                          allowDrawingOutsideViewBox: true,
-                          fit: BoxFit.fill,
+                      InkWell(
+                        onTap: Navigator.of(context).pop,
+                        child: Stack(
+                                          children: <Widget>[
+                        Pinned.fromPins(
+                          Pin(start: 2.6, end: 0.0),
+                          Pin(size: 2.8, middle: 0.5),
+                          child:
+                              // Adobe XD layer: 'Fill 1' (shape)
+                              SvgPicture.string(
+                            _svg_nahbd9,
+                            allowDrawingOutsideViewBox: true,
+                            fit: BoxFit.fill,
+                          ),
                         ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(size: 11.1, start: 0.0),
-                        Pin(start: 0.0, end: 0.0),
-                        child:
-                            // Adobe XD layer: 'Fill 3' (shape)
-                            SvgPicture.string(
-                          _svg_6df5un,
-                          allowDrawingOutsideViewBox: true,
-                          fit: BoxFit.fill,
+                        Pinned.fromPins(
+                          Pin(size: 11.1, start: 0.0),
+                          Pin(start: 0.0, end: 0.0),
+                          child:
+                              // Adobe XD layer: 'Fill 3' (shape)
+                              SvgPicture.string(
+                            _svg_6df5un,
+                            allowDrawingOutsideViewBox: true,
+                            fit: BoxFit.fill,
+                          ),
                         ),
+                                          ],
+                                        ),
                       ),
-                    ],
-                  ),
                 ),
                 Pinned.fromPins(
                   Pin(size: 63.7, middle: 0.4971),
@@ -862,18 +867,21 @@ class Login extends StatelessWidget {
                 //   ),
                 // ),
                 Container(),
-                Pinned.fromPins(
-                  Pin(size: 150.0, middle: 0.4968),
-                  Pin(size: 16.0, end: 391.8),
-                  child: Text(
-                    'Forget your password?',
-                    style: TextStyle(
-                      fontFamily: 'Montserrat',
-                      fontSize: 13,
-                      color: const Color(0xff2678b7),
-                      fontWeight: FontWeight.w500,
+                InkWell(
+                  onTap: ()=>Navigator.of(context).pushNamed(Forgetpwd.routname),
+                  child: Pinned.fromPins(
+                    Pin(size: 150.0, middle: 0.4968),
+                    Pin(size: 16.0, end: 391.8),
+                    child: Text(
+                      'Forget your password?',
+                      style: TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: 13,
+                        color: const Color(0xff2678b7),
+                        fontWeight: FontWeight.w500,
+                      ),
+                      textAlign: TextAlign.center,
                     ),
-                    textAlign: TextAlign.center,
                   ),
                 ),
               ],

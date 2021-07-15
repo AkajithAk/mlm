@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
-import './OnboardingScreen2.dart';
-import 'package:adobe_xd/page_link.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:mlm/OnboardingScreen2.dart';
+import 'package:mlm/SplashScreen.dart';
 
 class OnboardingScreen1 extends StatelessWidget {
+  static const routname = "/onboarding1";
   OnboardingScreen1({
     Key? key,
   }) : super(key: key);
@@ -662,60 +663,53 @@ class OnboardingScreen1 extends StatelessWidget {
                         Pin(size: 50.0, end: 74.0),
                         child:
                             // Adobe XD layer: 'Next' (group)
-                            PageLink(
-                          links: [
-                            PageLinkInfo(
-                              transition: LinkTransition.Fade,
-                              ease: Curves.easeOut,
-                              duration: 0.3,
-                              pageBuilder: () => OnboardingScreen2(),
+                            Stack(
+                          children: <Widget>[
+                            Pinned.fromPins(
+                              Pin(start: 0.0, end: 0.0),
+                              Pin(start: 0.0, end: 0.0),
+                              child:
+                                  // Adobe XD layer: 'Rectangle' (shape)
+                                  Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(8.0),
+                                  color: const Color(0xff2b2b2b),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: const Color(0x304162a9),
+                                      offset: Offset(-13, 47),
+                                      blurRadius: 79,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Container(
+                              width: 200,
+                              height: 60,
+                              child: RaisedButton(
+                                color: Colors.black,
+                                onPressed: () {
+                                  Navigator.of(context)
+                                      .pushNamed(OnboardingScreen2.routname);
+                                },
+                                // Pin(startFraction: 0.3417, endFraction: 0.3417),
+                                // Pin(size: 19.0, middle: 0.5161),
+                                child:
+                                    // Adobe XD layer: 'Next' (text)
+                                    Text(
+                                  'Next',
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontSize: 16,
+                                    color: const Color(0xffffffff),
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                              ),
                             ),
                           ],
-                          child: Stack(
-                            children: <Widget>[
-                              Pinned.fromPins(
-                                Pin(start: 0.0, end: 0.0),
-                                Pin(start: 0.0, end: 0.0),
-                                child:
-                                    // Adobe XD layer: 'Rectangle' (shape)
-                                    Container(
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(8.0),
-                                    color: const Color(0xff2b2b2b),
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: const Color(0x304162a9),
-                                        offset: Offset(-13, 47),
-                                        blurRadius: 79,
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                              Container(
-                                width: 200,
-                                height: 60,
-                                child: RaisedButton(
-                                  color: Colors.black,
-                                  onPressed: (){},
-                                  // Pin(startFraction: 0.3417, endFraction: 0.3417),
-                                  // Pin(size: 19.0, middle: 0.5161),
-                                  child:
-                                      // Adobe XD layer: 'Next' (text)
-                                      Text(
-                                    'Next',
-                                    style: TextStyle(
-                                      fontFamily: 'Montserrat',
-                                      fontSize: 16,
-                                      color: const Color(0xffffffff),
-                                      fontWeight: FontWeight.w500,
-                                    ),
-                                    textAlign: TextAlign.center,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
                         ),
                       ),
                       Pinned.fromPins(
@@ -746,20 +740,23 @@ class OnboardingScreen1 extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            Pinned.fromPins(
-                              Pin(startFraction: 0.3458, endFraction: 0.3542),
-                              Pin(size: 19.0, middle: 0.5645),
-                              child:
-                                  // Adobe XD layer: 'Skip' (text)
-                                  Text(
-                                'Skip',
-                                style: TextStyle(
-                                  fontFamily: 'Montserrat',
-                                  fontSize: 16,
-                                  color: const Color(0xff007bff),
-                                  fontWeight: FontWeight.w500,
+                            InkWell(
+                              onTap: ()=>Navigator.of(context).pushNamed(SplashScreen.routname),
+                              child: Pinned.fromPins(
+                                Pin(startFraction: 0.3458, endFraction: 0.3542),
+                                Pin(size: 19.0, middle: 0.5645),
+                                child:
+                                    // Adobe XD layer: 'Skip' (text)
+                                    Text(
+                                  'Skip',
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontSize: 16,
+                                    color: const Color(0xff007bff),
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                  textAlign: TextAlign.center,
                                 ),
-                                textAlign: TextAlign.center,
                               ),
                             ),
                           ],

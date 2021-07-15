@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
 
+import 'Forgetpwd.dart';
+import 'OTP.dart';
 import 'OnboardingScreen1.dart';
+import 'OnboardingScreen2.dart';
+import 'OnboardingScreen21.dart';
+import 'SplashScreen.dart';
 import 'SignUp.dart';
+import 'Login.dart';
+
+
 
 void main() {
   runApp(MyApp());
@@ -25,8 +33,16 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: SignUp(),
+      home: OnboardingScreen1(),
+      routes: {OnboardingScreen1.routname: (ctx) => OnboardingScreen1(),
+        OnboardingScreen2.routname: (ctx) => OnboardingScreen2(),
+        OnboardingScreen21.routname: (ctx) => OnboardingScreen21(),
+        SplashScreen.routname: (ctx) => SplashScreen(),
+        SignUp.routname: (ctx) => SignUp(),
+        Login.routname: (ctx) => Login(),
+        OTP.routname: (ctx) => OTP(),
+        Forgetpwd.routname: (ctx) => Forgetpwd(),}
     );
   }
 }
-//kjncslm
+
